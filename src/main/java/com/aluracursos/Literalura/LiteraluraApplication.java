@@ -1,6 +1,5 @@
 package com.aluracursos.Literalura;
 
-import com.aluracursos.Literalura.Service.ConsumoAPI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,9 +10,7 @@ public class LiteraluraApplication {
 
 		SpringApplication.run(LiteraluraApplication.class, args);
 
-		var consumoAPI = new ConsumoAPI();
-		var json = consumoAPI.obtenerDatos("https://gutendex.com/books/");
-		//System.out.println(json);
+
 	}
 
 }
