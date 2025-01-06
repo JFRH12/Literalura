@@ -1,6 +1,8 @@
 package com.aluracursos.Literalura.Service;
 
 
+import com.aluracursos.Literalura.DTO.GutendexResponse;
+import com.aluracursos.Literalura.DTO.GutendexResult;
 import com.aluracursos.Literalura.Model.Book;
 import com.aluracursos.Literalura.Repository.BookRepository;
 import org.springframework.stereotype.Service;
@@ -62,7 +64,7 @@ public class BookService {
                         result.getTitle(),
                         result.getAuthors().isEmpty() ? "Desconocido" : result.getAuthors().get(0).getName(),
                         result.getLanguages().isEmpty() ? "Desconocido" : result.getLanguages().get(0),
-                        result.getDownloadCount() // Usar un valor relacionado si aplica
+                        result.getDownload_count() // Usar un valor relacionado si aplica
                 );
                 return bookRepository.save(book);
             } else {

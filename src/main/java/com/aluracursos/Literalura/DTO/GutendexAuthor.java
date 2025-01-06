@@ -6,4 +6,3 @@ import lombok.Data;
 public class GutendexAuthor {
     private String name;
 }
-s

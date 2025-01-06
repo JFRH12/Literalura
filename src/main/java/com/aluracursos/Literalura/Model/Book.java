@@ -17,7 +17,19 @@ import lombok.NoArgsConstructor;
         private String title;
         private String author;
         private String language;
-        private int publicationYear;
+        private int downloadCount;
+
+        @Override
+        public String toString() {
+            return "Libro {" +
+                    "ID: " + id +
+                    ", Título: '" + title + '\'' +
+                    ", Autor: '" + author + '\'' +
+                    ", Idioma: '" + language + '\'' +
+                    ", Descargas: " + downloadCount +
+                    '}';
+        }
+
     }
 
 

@@ -17,4 +17,15 @@ public class Author {
     private String name;
     private int birthYear;
     private Integer deathYear; // Puede ser null si el autor está vivo
+
+    @Override
+    public String toString() {
+        return "Autor {" +
+                "ID: " + id +
+                ", Nombre: '" + name + '\'' +
+                ", Año de Nacimiento: " + birthYear +
+                ", Año de Fallecimiento: " + (deathYear == null ? "Vivo" : deathYear) +
+                '}';
+    }
+
 }

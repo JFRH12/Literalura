@@ -9,5 +9,5 @@ public class GutendexResult {
     private String title;
     private List<GutendexAuthor> authors;
     private List<String> languages;
-    private int downloadCount;
+    private int download_count;
 }
